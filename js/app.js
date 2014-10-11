@@ -14,8 +14,9 @@ function progressBar(percent, $element) {
 
 function calculateProgress(){
 
-  var totalDateDiff = 1362;
+  var totalDateDiff = 1395;
   var graduationDate = new Date(2017,4,27);
+  var startDate = new Date(2013,7,1);
   var today = new Date();
   Date.daysBetween = function( date1, date2 ) {
     //Get 1 day in milliseconds
@@ -32,7 +33,7 @@ function calculateProgress(){
     return Math.round(difference_ms/one_day);
   };
 
-  var dateDiff = Date.daysBetween(today, graduationDate);
+  var dateDiff = Date.daysBetween(startDate, today);
   var percenage = dateDiff / totalDateDiff;
   return Math.round(percenage * 100);
 
