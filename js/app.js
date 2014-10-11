@@ -4,6 +4,17 @@ $(document).ready(function(){
 
   $(window).scroll(scrollAnimation);
 
+  slowScroll($('#circle-progress'), $('#progress'), 2000);
+  slowScroll($('#circle-contact'), $('#contact'), 2000);
+
+  $('.fa-arrow').mouseover(function(){
+    $(this).removeClass('fa-arrow-circle-down').addClass('fa-arrow-circle-o-down');
+  });
+
+  $('.fa-arrow').mouseleave(function(){
+    $(this).addClass('fa-arrow-circle-down').removeClass('fa-arrow-circle-o-down');
+  });
+
 
 });
 
@@ -45,4 +56,13 @@ function scrollAnimation(){
   if (scrollBottom > progressBarPos){
     progressBar(calculateProgress(), $('#progressBar'));
   }
+}
+
+function slowScroll($el, $dest, duration){
+  $el.click(function(e){
+    e.preventDefault();
+    $('html body').animate({
+      scrollTop: $dest.offset().top
+    }, duration);
+  });
 }

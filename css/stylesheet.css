@@ -76,8 +76,10 @@ a {
   width: 300px;
 }
 
-#circle-down {
-  -vendor-animation-iteration-count: infinite;
+#circle-progress {
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
   margin-top: 45px;
   text-decoration: none;
 }
@@ -105,6 +107,17 @@ a {
 
 #progress h3 {
   font-size: 3em;
+}
+
+#progress a {
+  text-decoration: none;
+}
+
+#circle-contact {
+  margin-top: 45px;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
 }
 
 .pg-bar {
