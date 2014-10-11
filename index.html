@@ -1,2 +1,71 @@
-<h1>Josh Leibowitz's Webpage</h1>
-<p>Coming Soon</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- CSS Dependencies -->
+  <link rel="stylesheet" href="css/animate.css">
+
+  <!-- JS Dependencies -->
+  <!-- <script src="js/zepto-min.js"></script> -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/wow-min.js"></script>
+  <script src="js/progressBar.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/stylesheet.css">
+
+  <!-- Application JS -->
+  <script src="js/app.js"></script>
+
+  <!-- Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,900' rel='stylesheet' type='text/css'>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Homepage of Josh Leibowitz</title>
+</head>
+<body>
+
+  <!-- Intro -->
+  <section id="intro">
+    <div class="centered">
+      <div class="headshot-wrap">
+        <img id="headshot" src="images/headshot_1.jpg" alt="">
+      </div>
+      <h1>Hey.</h1>
+      <p>Welcome to <strong>joshleibowitz.me</strong>, the homepage of Josh Leibowitz. I am a <span id="class-year">second year</span> dental student at <a href="http://hsdm.harvard.edu/">Harvard School of Dental Medicine</a>, a huge <a href="http://newyork.yankees.mlb.com/">Yankee</a> fan, and I could live on pumpkin spice lattes.</p>
+      <p>Click the button below to see how much longer until you can start calling me Dr Josh Leibowitz.</p>
+      <!-- <i class="fa fa-arrow-circle-o-down fa-4x"></i> -->
+      <a href="#progress" class="fa fa-arrow-circle-down fa-4x animated bounce" id="circle-down"></a>
+      <!-- <i class="fa fa-arrow-circle-down fa-4x animated bounce" id="circle-down"></i> -->
+      <!-- <a href="#progress"><button class="down">down</button></a> -->
+    </div>
+  </section>
+
+  <!-- Progress -->
+  <section id="progress">
+    <div class="centered">
+      <h3>How Much Longer Until I'm a Dentist</h3>
+      <div id="progressBar" class="pg-bar "><div></div></div>
+      <script>
+        progressBar(0, $('#progressBar'));
+      </script>
+      <p>(Stay tuned for graduation in May 2017)</p>
+    </div>
+  </section>
+
+  <!-- Contact Me -->
+  <section id="contact">
+    <div class="centered">
+      <h3>Me, Elsewhere</h3>
+      <div class="sm-icons">
+        <a href="https://twitter.com/joshileibowitz" target="_blank" class="fa fa-twitter fa-2x"></a>
+        <a href="https://www.facebook.com/josh.leibowitz.79" target="_blank" class="fa fa-facebook fa-2x"></a>
+        <a href="mailto:joshileibowitz@gmail.com" target="_blank" class="fa fa-envelope fa-2x"></a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
